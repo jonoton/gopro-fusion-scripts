@@ -1,0 +1,144 @@
+Options:
+  -h, --help                                            display this help
+  --front <frontImagePath>                              path to the front file
+  --back <backImagePath>                                path to the back file
+  -o, --output <outpuFilePath>                          path to the output file
+  -d, --directory <directoryToBeParsed>                 Parse a directory to
+                                                        find sequences
+  -c, --calibration <calibrationFilePath>               path to the calibration
+                                                        file
+  --firstFrame <firstFrame>                             first frame of the
+                                                        sequence to process
+  --lastFrame <lastFrame>                               last frame of the
+                                                        sequence to process
+  --synchro <synchro>                                   synchronization shift
+                                                        between back and front
+                                                        videos
+  -w, --width <width>                                   width of the output
+                                                        image. Its height will
+                                                        be set automatically by
+                                                        the program.
+  --pc, --parallaxCompensation <parallaxCompensation>   warp mode for parallax
+                                                        compensation:
+                                                        0 Disabled
+                                                        1 D.WARP (default)
+  -b, --blending <blendMode>                            blending mode:
+                                                        0 Multiband (default)
+                                                        1 Master only
+                                                        2 Slave only
+  -p, --projection <projectionMode>                     projection :
+                                                        0 Equirectangular
+                                                        (default)
+                                                        1 Little Planet
+                                                        2 Fisheye
+  --videoCodec <videoCodec>                             video codec for video
+                                                        output:
+                                                        0 H.264 (default)
+                                                        1 CineForm
+                                                        2 ProRes
+                                                        3 VP9
+  --aspectRatio <aspectRatioMode>                       aspect ratio mode
+                                                        (overcapture only):
+                                                        0 1:1
+                                                        1 16:9
+                                                        2 4:3
+  --fov <fov (degrees)>                                 fov value in degrees
+                                                        (overcapture only):
+  -s, --stabilization <stabilizationMode>               stabilization mode:
+                                                        0 None
+                                                        1 ShakeOnly
+                                                        2 Full
+  --stabilizationFile <stabilizationFilepath>           path to the
+                                                        stabilization file
+                                                        (overrides GPMF). Only
+                                                        relevant when a
+                                                        stabilization mode is
+                                                        chosen.
+  --stabilizationCalib <stabilizationImuCalibFilepath>  path to the IMU
+                                                        calibration file
+  --stabilizationDump <stabilizationDump>               dump stabilization
+                                                        files
+                                                        (sensors,timestamps,..)
+                                                        to that directory (must
+                                                        exist).
+  --iq <iqMode>                                         IQ pass (GoPro Look):
+                                                        0 disabled (default)
+                                                        1 enabled, with the same
+                                                        implementation as the
+                                                        GUI
+                                                        2 enabled, with the CPU
+                                                        implementation
+                                                        3 enabled, with the GPU
+                                                        implementation
+  --denoise <value>                                     denoise parameter to
+                                                        use for the IQ pass,
+                                                        between 0 and 255. Only
+                                                        used if IQ pass is
+                                                        enabled
+  --enableAWB <value>                                   enableAWB parameter to
+                                                        use for the IQ pass,
+                                                        between 0 and 255. Only
+                                                        used if IQ pass is
+                                                        enabled
+  --flatMode <value>                                    flatMode parameter to
+                                                        use for the IQ pass,
+                                                        between 0 and 255. Only
+                                                        used if IQ pass is
+                                                        enabled
+  --globalContrast <value>                              globalContrast
+                                                        parameter to use for the
+                                                        IQ pass, between 0 and
+                                                        255. Only used if IQ
+                                                        pass is enabled
+  --localContrast <value>                               localContrast parameter
+                                                        to use for the IQ pass,
+                                                        between 0 and 255. Only
+                                                        used if IQ pass is
+                                                        enabled
+  --sharpness <value>                                   sharpness parameter to
+                                                        use for the IQ pass,
+                                                        between 0 and 255. Only
+                                                        used if IQ pass is
+                                                        enabled
+  --temperature <value>                                 temperature parameter
+                                                        to use for the IQ pass,
+                                                        between 0 and 255. Only
+                                                        used if IQ pass is
+                                                        enabled
+  --tint <value>                                        tint parameter to use
+                                                        for the IQ pass, between
+                                                        0 and 255. Only used if
+                                                        IQ pass is enabled
+  --wave <waveSoundPath>                                path to the wave file
+                                                        for ambisonic output
+  --amb, --ambType <ambType>                            ambisonic channel
+                                                        ordering:
+                                                        0 Stereo (default)
+                                                        1 Ambisonic Channel
+                                                        Number (ACN)
+                                                        2 Furse-Malham (FuMa)
+  --yaw <angle(degrees)>                                yaw orientation of the
+                                                        output
+  --pitch <angle(degrees)>                              pitch orientation of
+                                                        the output
+  --roll <angle(degrees)>                               roll orientation of the
+                                                        output
+  --noAnalytics                                         disable usage
+                                                        statistics
+  -l, --logLevel <logLevel>                             log level:
+                                                        0 None
+                                                        1 Critical
+                                                        2 Warning
+                                                        3 Info (default)
+                                                        4+ debug levels
+  --exportGpmf                                          export the GPMF
+                                                        metadata in a JSON file
+                                                        specified in the output
+                                                        file argument
+  --advancedDebug <debugDirectory>                      export extra debug
+                                                        images (for developers &
+                                                        nerds only)
+  --profiling <svgFilename>                             export profiling SVG
+                                                        image
+  --benchmark                                           print benchmark
+                                                        information
