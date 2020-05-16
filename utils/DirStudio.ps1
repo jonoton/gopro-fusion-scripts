@@ -3,7 +3,7 @@ $fusionFilename = "FusionStudio_x64.exe"
 
 function Get-ProgramFiles-FullPath {
 	param($filename)
-	$filePath = dir -Path "C:\\Program Files\\" -Filter $filename -Recurse -ErrorAction SilentlyContinue -Force | % { $_.FullName }
+	$filePath = dir -Path "C:\\Program Files\\" -Filter $filename -Recurse -ErrorAction SilentlyContinue -Force | select -f 1 | % { $_.FullName }
 	return $filePath
 }
 
