@@ -61,7 +61,8 @@ if ($askHw -eq 2) {
 $dWarp = "--pc 1"
 $multiBandBlending = "--blending 0"
 $equirectangularProjection = "--projection 0"
-$fullStabilization = "--stabilization 2"
+# full stabilization uses back cam as ref thus we must adjust yaw to view front
+$fullStabilization = "--stabilization 2 --yaw 180"
 $styling = "--flatMode 0 --globalContrast 128 --sharpness 128 --temperature 128 --tint 128"
 
 $3k = "--width 3072 --videoCodec 0" # h.264
