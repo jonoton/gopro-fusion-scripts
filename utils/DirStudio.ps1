@@ -11,7 +11,7 @@ $dirStudioExe = Get-ProgramFiles-FullPath -filename $fusionFilename
 write-host "Fusion Studio: $dirStudioExe"
 
 function Human-Readable-Size {
-	param ([int]$size)
+	param ([int64]$size)
 	if ($size -gt 1TB) { return [string]::Format("{0:0.00} TB", $size / 1TB) }
 	elseif ($size -gt 1GB) { return [string]::Format("{0:0.00} GB", $size / 1GB) }
 	elseif ($size -gt 1MB) { return [string]::Format("{0:0.00} MB", $size / 1MB) }
