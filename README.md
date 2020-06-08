@@ -3,23 +3,34 @@ GoPro Fusion Scripts
 
 Automate copying/moving files from the camera and rendering/stitching them into videos.
 
-## Copy camera files to local directory
+## Copy
 ```
 gopro-fusion-scripts\copyCam.bat Sources\Cam
 ```
-*Note: Prompt with default Yes*
-## Move camera files to local directory
+Copy all camera files front and back to `Sources\Cam` directory.
+
+*Note: Prompt with default `Yes`.*
+
+## Move
 ```
 gopro-fusion-scripts\moveCam.bat Sources\Cam
 ```
-*Note: Prompt with default No*
-## Render/Stitch camera files with local directory
+Move all camera files front and back to `Sources\Cam` directory.
+
+*Note: Prompt with default `No`.*
+
+## Render/Stitch
 ```
 gopro-fusion-scripts\render.bat Sources\Cam Rendered
 ```
-*Note: Prompt for options*
-## Clear all camera files
+Render/Stitch all local files in `Sources\Cam` directory and output to `Rendered` directory.
+
+*Note: Prompts for options. Creates a sub directory with current date as the name in `Rendered` directory.*
+
+## Clear
 ```
 gopro-fusion-scripts\clearCam.bat
 ```
-*Note: Prompt with default No*
+Clears all files on the camera.
+
+*Note: Prompt with default `No`.*
