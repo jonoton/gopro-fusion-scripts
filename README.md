@@ -11,15 +11,13 @@ gopro-fusion-scripts\copyCam.bat Sources\Cam
 ```
 Copy all camera files front and back to `Sources\Cam` directory.
 
-*Note: Prompt with default `Yes`.*
-
 ## Move
 ```
 gopro-fusion-scripts\moveCam.bat Sources\Cam
 ```
 Move all camera files front and back to `Sources\Cam` directory.
 
-*Note: Prompt with default `No`.*
+*Note: Prompt with default `Yes`.*
 
 ## Render/Stitch
 ```
@@ -27,7 +25,9 @@ gopro-fusion-scripts\render.bat Sources\Cam Rendered
 ```
 Render/Stitch all local files in `Sources\Cam` directory and output to `Rendered` directory.
 
-*Note: Prompts for options. Creates a sub directory with current date as the name in `Rendered` directory.*
+*Note: Prompts for options.*
+
+*Note: Creates a sub directory with current date as the name in `Rendered` directory.*
 
 ## Clear
 ```
