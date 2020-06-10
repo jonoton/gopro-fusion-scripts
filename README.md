@@ -3,7 +3,7 @@ GoPro Fusion Scripts
 
 Automate copying/moving files from the camera and rendering/stitching them into videos.
 
-[![Donate](https://img.shields.io/badge/Gift!-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=RLF3ZHK79YL3W&currency_code=USD&source=url)
+[![Gift!](https://img.shields.io/badge/Gift!-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=RLF3ZHK79YL3W&currency_code=USD&source=url)
 
 ## Copy
 ```
